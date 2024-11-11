@@ -28,8 +28,15 @@ analisis_empleabilidad_jovenes/
 
 Desarrollaremos este proyecto haciendo entrega de cada unas de las asginaciones semanales que se nos pidan, para agilizar trabajo utilizaremos **notebooks de Jupyter**, de esa forma contribuiremos al análisis exploratorio y visualización de datos. El enfoque modular del código facilitará la ampliación y modificación de cada aspecto del proyecto a medida que avancemos. Todo el código principal será almacenado en la carpeta `src/`, lo que permitirá una gestión clara y eficiente de los scripts relacionados con el procesamiento de datos, análisis y modelos.
 
-## Instrucciones de Uso de Git y Convenciones de Colaboración
+## Instrucciones para Clonar el Repositorio y Convenciones de Colaboración
 
+### Clonar el Repositorio
+```bash
+git clone https://github.com/d4na3l/empleabilidad-jovenes-VE
+cd empleabilidad-jovenes-VE
+```
+
+### Convenciones de Colaboracion
 Para colaborar en este proyecto, utilizaremos **conventional commits** como guía para mantener un historial de cambios claro y comprensible. Los siguientes tipos de commit están definidos para facilitar la organización y comprensión de las modificaciones:
 
 - **chore**: Modificaciones menores en la estructura o configuración.
@@ -58,31 +65,59 @@ Para colaborar en este proyecto, utilizaremos **conventional commits** como guí
         - `refactor: simplificar lógica de análisis en analysis.py`
         - `refactor: reorganizar funciones auxiliares en utils.py`
 
-### Flujo de trabajo con Git
+## Flujo de trabajo con Git
 
-1. Rama de trabajo:
-     - Trabaja sobre la rama develop para desarrollar y probar nuevas funcionalidades.
-     - Si trabajas en una funcionalidad específica, crea una rama con un nombre descriptivo basado en develop (por ejemplo, feature/analisis-empleabilidad).
+1. Configuración de la Rama de Trabajo
+    - Trabajaremos en la rama `develop` para probar y desarrollar nuevas funcionalidades. Para una organización adecuada, sigue estos pasos:
 
-3. Revisión de cambios:
-     - Una vez hayas completado la tarea, sube los cambios a tu rama y abre un pull request hacia develop.
-     - Se revisará el pull request, proporcionando feedback si es necesario.
+    #### Paso a Paso:
 
-4. Fusión a main:
-     - Solo el lider podrá aprobar y realizar el merge a main después de revisar el pull request en develop.
-     - Una vez que los cambios estén aprobados y probados en develop, el administrador será quien los fusione en main.
+    - **Cambiar a la rama `develop`:**
+   ```bash
+   git checkout develop
+   ```
+    - **Actualizar la rama develop con los últimos cambios del repositorio:**
+    ```bash
+    git pull origin develop
+    ```
+    - **Crear una rama nueva para la funcionalidad específica (basada en develop):** Usa un nombre descriptivo para la nueva rama. Por ejemplo, si trabajas en el análisis de empleabilidad:
+    ```bash
+    git checkout -b feature/analisis-empleabilidad
+    ```
 
-## Instrucciones para Clonar el Repositorio y Configurar el Entorno
+2. Realizar Cambios y Subirlos al Repositorio
+    - Después de completar el trabajo en tu rama, asegúrate de seguir estos pasos antes de abrir un pull request.
 
-### Clonar el Repositorio
-```bash
-git clone https://github.com/d4na3l/empleabilidad-jovenes-VE
-cd empleabilidad-jovenes-VE
-```
+    #### Paso a Paso:
+    - **Añadir los archivos que deseas confirmar al commit:**
+    ```bash
+    git add .
+    ```
+    - **Crear un commit con un mensaje descriptivo siguiendo el formato de conventional commits:**
+    ```bash
+    git commit -m "Commit que siga las convenciones previamente presentadas"
+    ```
+    - **Enviar la rama con tus cambios al repositorio:**
+    ```bash
+    git push origin feature/analisis-empleabilidad
+    ```
 
-### Configurar el Ambiente Virtual
+3. Abrir un Pull Request para Revisión de Cambios
+    - Una vez que los cambios estén en tu rama en GitHub, abre un pull request hacia la rama develop para revisión.
 
-#### Manual para Crear y Activar el Entorno Virtual
+    #### Paso a Paso:
+    - **Acceder al repositorio en GitHub.**
+    - **Seleccionar la pestaña `Pull requests`.**
+    - **Hacer clic en `New pull request`.**
+    - **Seleccionar `develop` como rama de destino y tu rama `(feature/analisis-empleabilidad)` como rama de origen.**
+    - **Escribir una descripción detallada del pull request explicando los cambios realizados.**
+    - **Solicitar revisión para que el administrador pueda revisar y dar feedback.**
+
+    **_NOTA:_** No fusionar el pull request a develop directamente. Solo el administrador tiene permisos para fusionar los cambios después de la revisión.
+
+## Configurar el Ambiente Virtual
+
+### Manual para Crear y Activar el Entorno Virtual
 
 Si prefieres configurarlo manualmente, sigue estos pasos:
 
@@ -105,7 +140,7 @@ Si prefieres configurarlo manualmente, sigue estos pasos:
         ```cmd
         project\Scripts\activate
         ```
-### Instalar Dependencias Una vez activado el entorno virtual, instala las dependencias necesarias con:
+## Instalar Dependencias Una vez activado el entorno virtual, instala las dependencias necesarias con:
 ```bash
 pip install -r requirements.txt
 ```
