@@ -13,7 +13,7 @@ El proyecto está construido en Python, y se emplearán análisis de datos y vis
 La estructura del proyecto es la siguiente:
 
 ```
-analisis_empleabilidad_jovenes/
+empleabilidad-jovenes-VE/
 ├── data/                           # Almacena los datasets y archivos de datos
 │   ├── raw/                        # Datos sin procesar
 │   └── processed/                  # Datos limpios y procesados
