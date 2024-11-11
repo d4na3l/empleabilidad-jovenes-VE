@@ -124,7 +124,7 @@ Si prefieres configurarlo manualmente, sigue estos pasos:
 1. Crear el ambiente virtual:
 
     ```bash
-    python -m venv project
+    python3 -m venv project
     ```
 
 2. Activar el ambiente virtual:
@@ -140,7 +140,8 @@ Si prefieres configurarlo manualmente, sigue estos pasos:
         ```cmd
         project\Scripts\activate
         ```
-## Instalar Dependencias Una vez activado el entorno virtual, instala las dependencias necesarias con:
+## Instalar Dependencias
+Una vez activado el entorno virtual, instala las dependencias necesarias con:
 ```bash
 pip install -r requirements.txt
 ```
