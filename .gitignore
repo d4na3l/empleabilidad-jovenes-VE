@@ -1,6 +1,2 @@
 # Cambiar de nombre dependiendo de su entorno virtual:
 /project
-
-# Ignoramos los datos descargados y procesados que utilizaremos para el desarrollo del proyecto
-/data/raw/*
-/data/proceesed/*
