@@ -1,5 +1,6 @@
 # Cambiar de nombre dependiendo de su entorno virtual:
 /project
+venv
 
 #
 src/__pycache__
