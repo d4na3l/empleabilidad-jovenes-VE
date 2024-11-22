@@ -5,6 +5,7 @@ venv
 /desarrollo_proyecto
 #
 __pycache__
+venv
 
 #
 /data/raw/filtering
