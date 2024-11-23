@@ -36,7 +36,7 @@ class FormularioSitioEquipo:
         """Muestra la lista de integrantes del equipo."""
         # Lista de integrantes
         integrantes = [
-            {"nombre": "Christian", "rol": "Líder del Proyecto"},
+            {"nombre": "Christian Rincón", "rol": "Líder del Proyecto"},
             {"nombre": "Manuel Contreras", "rol": "Encargado de documentación"},
             {"nombre": "Alexander Azócar", "rol": "Diseñador"},
             {"nombre": "Sahid", "rol": "Procesamiento de datos"},
