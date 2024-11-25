@@ -47,50 +47,34 @@ for file in all_files:
         print(f"Error al procesar el archivo {file}: {e}")
 
 # Función para mostrar la lista de archivos y seleccionar uno
-# Función para mostrar la lista de archivos y seleccionar uno
-# def seleccionar_archivo():
-#     # Mostrar todos los nombres de archivo con un número asignado
-#     print("Archivos disponibles en 'empleabilidad-jovenes-VE/data/data_WF':")
-#     for i, name in enumerate(file_names):
-#         print(f"{i + 1}. {name}")
+def seleccionar_archivo():
+    # Mostrar todos los nombres de archivo con un número asignado
+    print("Archivos disponibles en 'empleabilidad-jovenes-VE/data/data_WF':")
+    for i, name in enumerate(file_names):
+        print(f"{i + 1}. {name}")
     
-#     # Pedir al usuario que seleccione un archivo por número
-#     try:
-#         seleccion = int(input("\nSelecciona el número del archivo que quieres analizar: "))
-#         if 1 <= seleccion <= len(file_names):
-#             nombre_archivo = file_names[seleccion - 1]
-#             crear_tabla_pivote(nombre_archivo)
-#         else:
-#             print("Selección fuera de rango. Inténtalo de nuevo.")
-#     except ValueError:
-#         print("Entrada no válida. Por favor, introduce un número.")
+    # Pedir al usuario que seleccione un archivo por número
+    try:
+        seleccion = int(input("\nSelecciona el número del archivo que quieres analizar: "))
+        if 1 <= seleccion <= len(file_names):
+            nombre_archivo = file_names[seleccion - 1]
+            mostrar_dataframe(nombre_archivo)
+        else:
+            print("Selección fuera de rango. Inténtalo de nuevo.")
+    except ValueError:
+        print("Entrada no válida. Por favor, introduce un número.")
 
-# # Función para crear y mostrar una tabla pivote
-# def crear_tabla_pivote(nombre_archivo):
-#     df = dataframes[nombre_archivo]
-#     print("\nColumnas disponibles para la tabla pivote:")
-#     print(list(df.columns))
+# Función para mostrar el DataFrame correspondiente al archivo seleccionado
+def mostrar_dataframe(nombre_archivo):
+    if nombre_archivo in dataframes:
+        print(f"\nDataFrame para {nombre_archivo}:")
+        print(dataframes[nombre_archivo])
+    else:
+        print(f"El archivo '{nombre_archivo}' no se encontró en el directorio.")
 
-#     # Pedir al usuario que elija las columnas para la tabla pivote
-#     try:
-#         index_col = input("\nIntroduce el nombre de la columna que quieres usar como índice (agrupación): ")
-#         values_col = input("Introduce el nombre de la columna que quieres sumar o contar: ")
-#         aggfunc = input("Introduce la función de agregación (sum, count, mean, etc.): ")
-
-#         # Crear la tabla pivote
-#         pivot_table = pd.pivot_table(df, index=index_col, values=values_col, aggfunc=aggfunc)
-
-#         # Mostrar la tabla pivote
-#         print("\nTabla Pivote:\n")
-#         print(tabulate(pivot_table, headers='keys', tablefmt='fancy_grid'))
-#     except KeyError:
-#         print("Una de las columnas especificadas no existe. Inténtalo de nuevo.")
-#     except Exception as e:
-#         print(f"Error al crear la tabla pivote: {e}")
-
-# # Ejemplo de uso de la función de selección
-# seleccionar_archivo()
-for nombre_archivo, dataframe in dataframes.items():
-    print(f"DataFrame para {nombre_archivo}:")
-    print(dataframe)
-    print("\n" + "-"*50 + "\n")
+# Ejemplo de uso de la función de selección
+seleccionar_archivo()
+# for nombre_archivo, dataframe in dataframes.items():
+#     print(f"DataFrame para {nombre_archivo}:")
+#     print(dataframe)
+#     print("\n" + "-"*50 + "\n")
