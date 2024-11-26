@@ -1,197 +1,210 @@
 import pandas as pd
 import numpy as np
+import re
+import warnings
 
 def load_data(filepath, rename_columns=None, columns_to_keep=None):
     """
-    Load a CSV file into a DataFrame, optionally renaming columns.
-
-    Args:
-        filepath (str): Path to the CSV file.
-        rename_columns (dict, optional): Mapping of columns to rename. Defaults to None.
-
-    Returns:
-        pd.DataFrame: Loaded DataFrame.
+    Load a CSV file with optional renaming and column filtering.
     """
-    df = pd.read_csv(filepath)
-    if rename_columns:
-        existing_rename_map = {k: v for k, v in rename_columns.items() if k in df.columns}
-        df.rename(columns=existing_rename_map, inplace=True)
+    try:
+        df = pd.read_csv(filepath)
+        if rename_columns:
+            valid_renames = {k: v for k, v in rename_columns.items() if k in df.columns}
+            df.rename(columns=valid_renames, inplace=True)
 
-    if columns_to_keep:
-        df = df[[col for col in columns_to_keep if col in df.columns]]
-    return df
+        if columns_to_keep:
+            df = df[[col for col in columns_to_keep if col in df.columns]]
 
-def fill_missing_values(df, group_cols=None):
-    """
-    Fill missing values in a DataFrame by copying values from the closest matching rows.
+        return df
 
-    Args:
-        df (pd.DataFrame): DataFrame to fill.
-        group_cols (list): Columns to group by when searching for closest matches.
-
-    Returns:
-        pd.DataFrame: DataFrame with missing values filled.
-    """
-    if not group_cols:
-        raise ValueError("`group_cols` must be provided for identifying groups.")
-
-    # Verificar si todas las columnas existen en el DataFrame
-    missing_cols = [col for col in group_cols if col not in df.columns]
-    if missing_cols:
-        raise ValueError(f"The following columns are missing in the DataFrame: {missing_cols}")
-
-    # Función para encontrar el valor más cercano en el tiempo
-    def find_closest(row):
-        if not pd.isna(row['obs_value']):
-            return row['obs_value']
-
-        # Filtrar registros similares
-        similar = df[
-            (df['sex'] == row['sex']) &
-            (df['classif1'] == row['classif1']) &
-            (df['classif2'] == row['classif2']) &
-            (~df['obs_value'].isna())  # Solo filas sin NaN en obs_value
-        ]
-
-        if not similar.empty:
-            # Buscar el registro más cercano en el tiempo
-            closest_idx = (similar['time'] - row['time']).abs().idxmin()
-            return similar.loc[closest_idx, 'obs_value']
-
-        return np.nan  # Si no se encuentra un valor, dejar como NaN
-
-    # Aplicar la función fila por fila
-    df['obs_value'] = df.apply(find_closest, axis=1)
-    return df
+    except Exception as e:
+        warnings.warn(f"Error loading CSV: {e}")
+        return pd.DataFrame()
 
 def remove_totals(df, columns):
     """
     Remove rows where specified columns contain the word 'Total'.
-
-    Args:
-        df (pd.DataFrame): DataFrame to clean.
-        columns (list): List of columns to check for 'Total'.
-
-    Returns:
-        pd.DataFrame: Cleaned DataFrame.
     """
-    mask = ~pd.concat([df[col].str.contains('Total', na=False) for col in columns], axis=1).any(axis=1)
+    valid_columns = [col for col in columns if col in df.columns and df[col].notna().any()]
+    if not valid_columns:
+        return df.reset_index(drop=True)
+
+    mask = ~pd.concat([df[col].str.contains('Total', na=False) for col in valid_columns], axis=1).any(axis=1)
     return df[mask].reset_index(drop=True)
 
-def create_pivot_table(df, index_col, group_col, value_col='obs_value'):
+def extract_age(age_str):
     """
-    Create a pivot table with specified index, columns, and values.
+    Extract age ranges or single ages from a string.
+    """
+    if pd.isna(age_str) or not isinstance(age_str, str):
+        return None
+
+    # Remover prefijos innecesarios
+    if ':' in age_str:
+        age_str = age_str.split(':', 1)[-1].strip()
+
+    # Definir patrones para identificar edades
+    patterns = [r'(\d+)-(\d+)', r'(\d+)\+', r'(\d+)']
+    for pattern in patterns:
+        match = re.search(pattern, age_str)
+        if match:
+            if '-' in age_str:
+                return int(match.group(1)), int(match.group(2))
+            elif '+' in age_str:
+                return int(match.group(1)), None
+            else:
+                return int(match.group(1)), int(match.group(1))
+
+    # Si no coincide con ningún patrón
+    return None
+
+def filter_age_range(df, min_allowed=15, max_allowed=30):
+    """
+    Filter DataFrame rows based on the extracted age range.
 
     Args:
-        df (pd.DataFrame): DataFrame to pivot.
-        index_col (str): Column to use as the index.
-        group_col (str): Column to create columns from.
-        value_col (str): Column to aggregate values from.
+        df (pd.DataFrame): Input DataFrame with 'age_extracted' column.
+        min_allowed (int): Minimum age allowed for inclusion.
+        max_allowed (int): Maximum age allowed for inclusion.
 
     Returns:
-        pd.DataFrame: Pivot table.
+        pd.DataFrame: Filtered DataFrame.
     """
-    pivot_df = df.pivot_table(index=index_col, columns=group_col, values=value_col)
-    pivot_df.fillna(0, inplace=True)
-    return pivot_df
+    def is_within_range(age_range):
+        if pd.isna(age_range):
+            return False
+        min_age, max_age = age_range
 
-def create_total_pivot_table(df, index_col='time', value_col='obs_value', total_cols=None):
+        # Si solo hay límite inferior (None en el segundo valor)
+        if max_age is None:
+            return min_allowed <= min_age <= max_allowed
+
+        # Si ambos límites están definidos, verificar que ambos caigan dentro del rango permitido
+        if min_age >= min_allowed and max_age <= max_allowed:
+            return True
+
+        return False
+
+    # Aplicar el filtro
+    return df[df['age_extracted'].apply(is_within_range)]
+
+
+def remove_parentheses_content(df, column):
     """
-    Create a pivot table from rows where specified columns contain 'Total'.
-
-    Args:
-        df (pd.DataFrame): DataFrame to process.
-        index_col (str): Column to use as the index (e.g., 'time').
-        value_col (str): Column containing values to aggregate (e.g., 'obs_value').
-        total_cols (list): List of columns to filter for 'Total' values (e.g., ['sex', 'classif1', 'classif2']).
-
-    Returns:
-        pd.DataFrame: Combined pivot table with 'Total' values for specified columns.
+    Remove all content within parentheses in the specified column, including the parentheses.
     """
-    if total_cols is None:
-        raise ValueError("You must specify the columns to filter for 'Total' values.")
+    if column in df.columns:
+        df[column] = df[column].astype(str).replace(r'\(.*?\)', '', regex=True).str.strip()
+    return df
 
-    # List to store intermediate pivot tables
-    pivot_tables = []
 
-    for col in total_cols:
-        # Filtrar filas donde la columna actual contiene 'Total'
-        filtered_df = df[df[col].str.contains('Total', na=False)]
-
-        # Crear la tabla pivote para la columna actual
-        pivot = filtered_df.pivot_table(index=index_col, columns=col, values=value_col, aggfunc='sum')
-
-        # Añadir la tabla pivote a la lista
-        pivot_tables.append(pivot)
-
-    # Concatenar todas las tablas pivote por columnas
-    combined_pivot = pd.concat(pivot_tables, axis=1)
-
-    # Rellenar valores faltantes con 0
-    combined_pivot.fillna(0, inplace=True)
-
-    return combined_pivot
-
-def calculate_proportions(df_pivot):
+def preprocess_data(df):
     """
-    Calculate row-wise proportions for a pivot table.
-
-    Args:
-        df_pivot (pd.DataFrame): Pivot table with numerical values.
-
-    Returns:
-        pd.DataFrame: Pivot table with proportions.
+    Apply data cleaning and preprocessing steps to the DataFrame.
     """
-    return df_pivot.div(df_pivot.sum(axis=1), axis=0)
+    # Limpiar contenido entre paréntesis
+    df = remove_parentheses_content(df, 'classif1')
 
-def calculate_yearly_change(df_pivot):
+    # Extraer rango de edades
+    if 'classif1' in df.columns:
+        df['age_extracted'] = df['classif1'].apply(extract_age)
+
+    if 'classif2' in df.columns:
+        df = remove_parentheses_content(df, 'classif2')
+
+    # Extraer rango de edades
+    if 'classif1' in df.columns:
+        df['age_extracted'] = df['classif1'].apply(extract_age)
+
+    # Convertir valores numéricos en 'obs_value'
+    if 'obs_value' in df.columns:
+        df['obs_value'] = pd.to_numeric(df['obs_value'], errors='coerce')
+
+    return df.dropna(subset=['obs_value']).reset_index(drop=True)
+
+def fill_missing_values(df, group_cols=None):
     """
-    Calculate yearly percentage change for a time-indexed DataFrame.
-
-    Args:
-        df_pivot (pd.DataFrame): DataFrame indexed by time.
-
-    Returns:
-        pd.DataFrame: DataFrame with yearly percentage change.
+    Fill missing values in a DataFrame based on similar rows.
     """
-    return df_pivot.pct_change().mul(100)
+    if not group_cols or not all(col in df.columns for col in group_cols):
+        warnings.warn("Some group columns are missing. Skipping filling.")
+        return df
 
-def calculate_correlations(df, numeric_cols=None, categorical_cols=None):
+    def find_closest(row):
+        if not pd.isna(row['obs_value']):
+            return row['obs_value']
+
+        # Ajustar para manejar columnas opcionales
+        conditions = [(df['sex'] == row['sex']), (df['classif1'] == row['classif1'])]
+        if 'classif2' in df.columns and 'classif2' in row:
+            conditions.append(df['classif2'] == row['classif2'])
+
+        similar = df[np.logical_and.reduce(conditions) & (~df['obs_value'].isna())]
+        if not similar.empty:
+            closest_idx = (similar['time'].astype(int) - int(row['time'])).abs().idxmin()
+            return similar.loc[closest_idx, 'obs_value']
+
+        return np.nan
+
+    df['obs_value'] = df.apply(find_closest, axis=1)
+    return df
+
+
+def analyze_dataset(df):
     """
-    Calculate correlations for a DataFrame, handling categorical columns.
-
-    Args:
-        df (pd.DataFrame): DataFrame to analyze.
-        numeric_cols (list, optional): Columns to include directly as numeric.
-        categorical_cols (list, optional): Columns to encode as numerical.
-
-    Returns:
-        pd.DataFrame: Correlation matrix.
+    Provide an analysis of the dataset structure.
     """
-    # Select numeric columns
-    numeric_df = df[numeric_cols] if numeric_cols else pd.DataFrame()
-
-    # Encode categorical columns if provided
-    if categorical_cols:
-        categorical_encoded = pd.get_dummies(df[categorical_cols], drop_first=True)
-        numeric_df = pd.concat([numeric_df, categorical_encoded], axis=1)
-
-    # Ensure the DataFrame only contains numeric data
-    return numeric_df.corr()
-
-
+    return {
+        'total_rows': len(df),
+        'column_completeness': {
+            col: {
+                'null_count': df[col].isnull().sum(),
+                'null_percentage': df[col].isnull().mean() * 100
+            } for col in df.columns
+        },
+        'unique_values': {col: df[col].unique().tolist() for col in df.columns if df[col].nunique() < 50}
+    }
 
 def export_dataframe(df, filename, filepath='../data/processed/'):
     """
-    Export a DataFrame to a CSV file.
+    Export the DataFrame to a CSV file.
+    """
+    full_path = f"{filepath}{filename}"
+    df.to_csv(full_path, index=False)
+
+def process_pipeline(filepath, rename_columns=None, columns_to_keep=None, min_allowed=15, max_allowed=30):
+    """
+    Full pipeline for data processing and cleaning.
 
     Args:
-        df (pd.DataFrame): DataFrame to export.
-        filepath (str): Directory to save the file.
-        filename (str): Name of the output file.
+        filepath (str): Path to the input file.
+        rename_columns (dict): Optional column renaming map.
+        columns_to_keep (list): Optional columns to retain.
+        min_allowed (int): Minimum age allowed for inclusion.
+        max_allowed (int): Maximum age allowed for inclusion.
 
     Returns:
-        str: Full path to the saved file.
+        pd.DataFrame: Processed DataFrame.
     """
-    export_path = f'{filepath}{filename}'
-    df.to_csv(export_path, index=False)
+    # Cargar datos
+    df = load_data(filepath, rename_columns, columns_to_keep)
+
+    # Remover filas con Totales (sólo columnas que existan)
+    df = remove_totals(df, [col for col in ['sex', 'classif1', 'classif2'] if col in df.columns])
+
+    # Preprocesar datos
+    df = preprocess_data(df)
+
+    # Filtrar por rango de edad
+    df = filter_age_range(df, min_allowed=min_allowed, max_allowed=max_allowed)
+
+    # Llenar valores faltantes (ignorar columnas que no estén presentes)
+    group_cols = [col for col in ['sex', 'classif1', 'classif2'] if col in df.columns]
+    df = fill_missing_values(df, group_cols)
+
+    # Exportar resultados
+    export_dataframe(df, 'cleanned_'+filepath.split('/')[-1])
+    return df
+
+
