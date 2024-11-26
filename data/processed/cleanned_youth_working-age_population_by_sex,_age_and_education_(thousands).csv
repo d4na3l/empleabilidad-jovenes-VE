@@ -1,652 +1,329 @@
-time,sex,classif1,classif2,obs_value
-2017,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7988.515
-2017,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,101.121
-2017,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2148.42
-2017,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,3169.844
-2017,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,2559.12
-2017,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,10.01
-2017,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2737.383
-2017,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,35.734
-2017,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1014.954
-2017,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,1356.51
-2017,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,329.12
-2017,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2017,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2652.078
-2017,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,28.672
-2017,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,554.745
-2017,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,951.471
-2017,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,1112.94
-2017,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,4.25
-2017,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2599.054
-2017,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,36.715
-2017,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,578.721
-2017,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,861.863
-2017,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,1117.06
-2017,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,4.695
-2017,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,4075.694
-2017,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,64.063
-2017,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,1248.967
-2017,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,1679.162
-2017,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1077.501
-2017,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,6.001
-2017,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1405.772
-2017,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,22.36
-2017,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,571.251
-2017,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,683.513
-2017,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,128.648
-2017,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2017,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1354.079
-2017,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,20.334
-2017,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,325.983
-2017,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,521.968
-2017,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,483.9
-2017,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.894
-2017,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1315.843
-2017,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,21.369
-2017,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,351.733
-2017,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,473.681
-2017,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,464.953
-2017,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,4.107
-2017,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3912.821
-2017,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,37.058
-2017,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,899.453
-2017,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,1490.682
-2017,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1481.619
-2017,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,4.009
-2017,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1331.611
-2017,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,13.374
-2017,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,443.703
-2017,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,672.997
-2017,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,200.472
-2017,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2017,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1297.999
-2017,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,8.338
-2017,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,228.762
-2017,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,429.503
-2017,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,629.04
-2017,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,2.356
-2017,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1283.211
-2017,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,15.346
-2017,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,226.988
-2017,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,388.182
-2017,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,652.107
-2017,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,
-2016,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7943.397
-2016,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,93.123
-2016,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2258.361
-2016,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,2680.539
-2016,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,2909.794
-2016,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,1.58
-2016,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2713.218
-2016,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,29.282
-2016,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1225.59
-2016,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,1069.659
-2016,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,388.43
-2016,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2016,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2634.102
-2016,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,27.975
-2016,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,505.013
-2016,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,849.085
-2016,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,1251.858
-2016,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,
-2016,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2596.077
-2016,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,35.866
-2016,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,527.758
-2016,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,761.795
-2016,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,1269.506
-2016,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.152
-2016,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,4049.178
-2016,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,63.675
-2016,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,1320.019
-2016,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,1434.554
-2016,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1230.304
-2016,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,
-2016,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1392.899
-2016,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,19.571
-2016,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,687.474
-2016,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,521.637
-2016,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,164.217
-2016,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2016,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1343.742
-2016,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,18.342
-2016,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,309.699
-2016,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,473.312
-2016,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,542.389
-2016,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,
-2016,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1312.537
-2016,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,25.762
-2016,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,322.846
-2016,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,439.605
-2016,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,523.698
-2016,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,
-2016,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3894.219
-2016,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,29.448
-2016,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,938.342
-2016,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,1245.985
-2016,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1679.49
-2016,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,0.954
-2016,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1320.319
-2016,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,9.711
-2016,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,538.116
-2016,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,548.022
-2016,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,224.213
-2016,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2016,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1290.36
-2016,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,9.633
-2016,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,195.314
-2016,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,375.773
-2016,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,709.469
-2016,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,
-2016,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1283.54
-2016,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,10.104
-2016,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,204.912
-2016,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,322.19
-2016,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,745.808
-2016,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,
-2012,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7865.97
-2012,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,116.913
-2012,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,3918.898
-2012,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,1251.104
-2012,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,2576.128
-2012,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,2.926
-2012,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2693.975
-2012,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,34.965
-2012,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1759.943
-2012,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,537.474
-2012,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,361.3
-2012,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.292
-2012,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2662.702
-2012,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,37.589
-2012,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1071.984
-2012,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,383.494
-2012,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,1168.506
-2012,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.129
-2012,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2509.292
-2012,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,44.359
-2012,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1086.971
-2012,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,330.135
-2012,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,1046.322
-2012,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.504
-2012,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3982.702
-2012,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,69.319
-2012,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2193.967
-2012,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,643.862
-2012,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1073.576
-2012,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,1.978
-2012,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1372.209
-2012,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,21.297
-2012,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,944.534
-2012,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,259.19
-2012,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,147.022
-2012,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2012,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1348.531
-2012,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,21.529
-2012,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,623.42
-2012,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,206.48
-2012,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,496.557
-2012,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,0.546
-2012,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1261.961
-2012,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,26.494
-2012,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,626.014
-2012,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,178.191
-2012,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,429.997
-2012,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.266
-2012,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3883.268
-2012,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,47.594
-2012,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,1724.931
-2012,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,607.243
-2012,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1502.552
-2012,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,0.948
-2012,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1321.766
-2012,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,13.668
-2012,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,815.41
-2012,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,278.284
-2012,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,214.278
-2012,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2012,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1314.171
-2012,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,16.06
-2012,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,448.564
-2012,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Intermediate,177.014
-2012,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,671.949
-2012,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,0.583
-2012,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1247.331
-2012,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,17.866
-2012,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,460.957
-2012,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,151.944
-2012,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,616.326
-2012,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,
-2011,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7815.303
-2011,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,128.667
-2011,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,5213.201
-2011,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,2469.858
-2011,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,3.578
-2011,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2688.752
-2011,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,37.966
-2011,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,2301.215
-2011,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,349.101
-2011,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.47
-2011,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2660.242
-2011,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,42.957
-2011,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1468.88
-2011,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,1147.266
-2011,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.139
-2011,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2466.309
-2011,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,47.743
-2011,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1443.105
-2011,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,973.491
-2011,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.97
-2011,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3956.42
-2011,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,77.408
-2011,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2855.186
-2011,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1021.372
-2011,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,2.454
-2011,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1369.437
-2011,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,24.238
-2011,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1197.843
-2011,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,147.024
-2011,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.331
-2011,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1347.055
-2011,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,23.683
-2011,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,840.749
-2011,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,481.869
-2011,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,0.754
-2011,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1239.928
-2011,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,29.486
-2011,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,816.594
-2011,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,392.479
-2011,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.368
-2011,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3858.883
-2011,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,51.259
-2011,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2358.015
-2011,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1448.486
-2011,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,1.123
-2011,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1319.315
-2011,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,13.728
-2011,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1103.372
-2011,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,202.077
-2011,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2011,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1313.187
-2011,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,19.274
-2011,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,628.132
-2011,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,665.397
-2011,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,0.384
-2011,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1226.381
-2011,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,18.257
-2011,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,626.511
-2011,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,581.012
-2011,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,0.601
-2010,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7759.166
-2010,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,137.341
-2010,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,5282.13
-2010,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,2335.696
-2010,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,3.999
-2010,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2684.188
-2010,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,40.81
-2010,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,2314.443
-2010,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,327.603
-2010,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2010,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2652.294
-2010,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,46.879
-2010,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1501.342
-2010,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,1102.466
-2010,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.608
-2010,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2422.685
-2010,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,49.653
-2010,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1466.344
-2010,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,905.628
-2010,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.06
-2010,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3926.906
-2010,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,83.114
-2010,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2897.826
-2010,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,943.383
-2010,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,2.584
-2010,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1366.832
-2010,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,26.126
-2010,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1209.178
-2010,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,130.356
-2010,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2010,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1342.64
-2010,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,26.688
-2010,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,862.013
-2010,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,453.062
-2010,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,0.878
-2010,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1217.434
-2010,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,30.3
-2010,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,826.636
-2010,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,359.965
-2010,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,0.533
-2010,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3832.26
-2010,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,54.228
-2010,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2384.304
-2010,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1392.313
-2010,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,1.416
-2010,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1317.355
-2010,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,14.684
-2010,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1105.266
-2010,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,197.246
-2010,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,
-2010,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1309.654
-2010,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,20.191
-2010,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,639.33
-2010,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,649.404
-2010,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,0.73
-2010,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1205.251
-2010,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,19.352
-2010,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,639.708
-2010,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,545.663
-2010,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,0.527
-2009,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7678.862
-2009,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,141.225
-2009,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,5334.052
-2009,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,2198.336
-2009,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,5.25
-2009,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2682.558
-2009,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,42.658
-2009,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,2302.76
-2009,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,336.341
-2009,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.798
-2009,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2614.983
-2009,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,46.353
-2009,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1546.052
-2009,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,1020.672
-2009,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.906
-2009,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2381.322
-2009,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,52.213
-2009,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1485.241
-2009,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,841.323
-2009,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,2.545
-2009,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3885.926
-2009,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,84.846
-2009,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2923.138
-2009,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,875.154
-2009,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,2.789
-2009,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1365.845
-2009,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,25.182
-2009,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1209.786
-2009,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,130.479
-2009,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.399
-2009,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1323.389
-2009,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,25.98
-2009,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,878.396
-2009,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,418.315
-2009,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,0.698
-2009,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1196.692
-2009,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,33.684
-2009,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,834.956
-2009,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,326.36
-2009,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.692
-2009,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3792.936
-2009,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,56.38
-2009,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2410.914
-2009,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1323.182
-2009,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,2.461
-2009,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1316.712
-2009,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,17.477
-2009,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1092.974
-2009,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,205.862
-2009,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.4
-2009,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1291.594
-2009,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,20.374
-2009,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,667.656
-2009,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,602.357
-2009,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.208
-2009,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1184.63
-2009,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,18.529
-2009,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,650.285
-2009,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,514.963
-2009,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,0.853
-2008,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7593.339
-2008,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,123.684
-2008,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,5445.596
-2008,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,2012.531
-2008,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,11.528
-2008,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2681.324
-2008,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,38.618
-2008,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,2326.253
-2008,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,314.454
-2008,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,1.998
-2008,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2572.132
-2008,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,40.947
-2008,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1589.605
-2008,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,937.258
-2008,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,4.32
-2008,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2339.884
-2008,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,44.118
-2008,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1529.737
-2008,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,760.819
-2008,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,5.209
-2008,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3842.731
-2008,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,78.042
-2008,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2957.104
-2008,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,800.454
-2008,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,7.131
-2008,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1364.852
-2008,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,23.674
-2008,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1215.906
-2008,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,124.23
-2008,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,1.042
-2008,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1301.667
-2008,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,26.526
-2008,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,894.685
-2008,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,377.856
-2008,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,2.6
-2008,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1176.212
-2008,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,27.843
-2008,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,846.513
-2008,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,298.368
-2008,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,3.489
-2008,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3750.608
-2008,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,45.642
-2008,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2488.492
-2008,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1212.078
-2008,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,4.397
-2008,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1316.472
-2008,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,14.944
-2008,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1110.347
-2008,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,190.224
-2008,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.957
-2008,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1270.465
-2008,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,14.422
-2008,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,694.92
-2008,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,559.402
-2008,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.72
-2008,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1163.671
-2008,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,16.276
-2008,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,683.224
-2008,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,462.452
-2008,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.72
-2007,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7508.4
-2007,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,129.091
-2007,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,5563.532
-2007,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,
-2007,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1803.802
-2007,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,11.893
-2007,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2679.454
-2007,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,36.37
-2007,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,2383.652
-2007,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,
-2007,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,257.585
-2007,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,1.765
-2007,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2529.479
-2007,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,47.534
-2007,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1628.068
-2007,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,849.798
-2007,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,4.078
-2007,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2299.468
-2007,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,45.187
-2007,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1551.812
-2007,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,696.419
-2007,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,6.05
-2007,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3799.505
-2007,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,81.152
-2007,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2990.587
-2007,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,
-2007,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,719.458
-2007,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,8.308
-2007,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1363.746
-2007,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,21.494
-2007,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1239.838
-2007,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,
-2007,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,101.258
-2007,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,1.156
-2007,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1279.717
-2007,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,31.788
-2007,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,901.39
-2007,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,343.696
-2007,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,2.844
-2007,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1156.042
-2007,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,27.869
-2007,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,849.36
-2007,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,274.504
-2007,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,4.309
-2007,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3708.896
-2007,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,47.94
-2007,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2572.944
-2007,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,
-2007,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1084.343
-2007,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,3.586
-2007,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1315.708
-2007,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,14.876
-2007,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1143.814
-2007,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,
-2007,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,156.327
-2007,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.61
-2007,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1249.762
-2007,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,15.746
-2007,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,726.678
-2007,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,506.102
-2007,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.234
-2007,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1143.426
-2007,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,17.317
-2007,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,702.452
-2007,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,421.915
-2007,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,1.742
-2006,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7421.618
-2006,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,145.799
-2006,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,5641.739
-2006,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1623.258
-2006,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,10.821
-2006,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2677.746
-2006,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,47.05
-2006,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,2399.856
-2006,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,229.282
-2006,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,1.558
-2006,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2486.539
-2006,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,44.654
-2006,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1674.998
-2006,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,763.366
-2006,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,3.52
-2006,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2257.333
-2006,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,54.095
-2006,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1566.884
-2006,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,630.61
-2006,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,5.744
-2006,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3755.105
-2006,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,89.058
-2006,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,3014.938
-2006,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,644.381
-2006,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,6.729
-2006,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1362.555
-2006,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,28.03
-2006,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1247.352
-2006,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,86.26
-2006,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.913
-2006,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1257.758
-2006,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,28.149
-2006,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,917.146
-2006,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,310.024
-2006,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,2.441
-2006,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1134.792
-2006,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,32.879
-2006,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,850.44
-2006,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,248.097
-2006,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,3.376
-2006,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3666.513
-2006,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,56.742
-2006,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2626.802
-2006,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,978.878
-2006,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,4.092
-2006,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1315.191
-2006,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,19.02
-2006,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1152.504
-2006,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,143.022
-2006,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,0.644
-2006,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1228.781
-2006,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,16.506
-2006,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,757.852
-2006,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,453.343
-2006,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,1.079
-2006,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1122.542
-2006,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,21.216
-2006,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,716.444
-2006,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,382.512
-2006,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,2.368
-2005,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Total,7356.838
-2005,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,155.031
-2005,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,5745.234
-2005,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,0.344
-2005,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,1437.6
-2005,Sex: Total,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,18.63
-2005,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Total,2671.331
-2005,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,46.035
-2005,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,2413.142
-2005,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,
-2005,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,207.486
-2005,Sex: Total,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,4.45
-2005,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Total,2451.443
-2005,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,49.594
-2005,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,1729.15
-2005,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,665.556
-2005,Sex: Total,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,7.142
-2005,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Total,2234.064
-2005,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,59.401
-2005,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,1602.943
-2005,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,
-2005,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,564.558
-2005,Sex: Total,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,7.037
-2005,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3735.987
-2005,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,98.532
-2005,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,3052.434
-2005,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,
-2005,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,573.299
-2005,Sex: Male,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,11.682
-2005,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1361.285
-2005,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,29.306
-2005,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1254.562
-2005,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,
-2005,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,74.974
-2005,Sex: Male,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,2.402
-2005,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1244.476
-2005,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,31.433
-2005,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,933.222
-2005,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,274.978
-2005,Sex: Male,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,4.843
-2005,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1130.226
-2005,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,37.793
-2005,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,864.648
-2005,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,
-2005,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,223.347
-2005,Sex: Male,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,4.436
-2005,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Total,3620.852
-2005,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Less than basic,56.499
-2005,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Basic,2692.8
-2005,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Intermediate,
-2005,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Advanced,864.301
-2005,Sex: Female,Age (Youth bands): 15-29,Education (Aggregate levels): Level not stated,6.947
-2005,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Total,1310.045
-2005,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Less than basic,16.728
-2005,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Basic,1158.579
-2005,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Intermediate,
-2005,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Advanced,132.512
-2005,Sex: Female,Age (Youth bands): 15-19,Education (Aggregate levels): Level not stated,2.048
-2005,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Total,1206.967
-2005,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Less than basic,18.162
-2005,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Basic,795.928
-2005,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Advanced,390.579
-2005,Sex: Female,Age (Youth bands): 20-24,Education (Aggregate levels): Level not stated,2.299
-2005,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Total,1103.839
-2005,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Less than basic,21.608
-2005,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Basic,738.294
-2005,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Intermediate,
-2005,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Advanced,341.21
-2005,Sex: Female,Age (Youth bands): 25-29,Education (Aggregate levels): Level not stated,2.6
+time,sex,classif1,classif2,obs_value,age_extracted
+2017,Sex: Male,Age : 15-29,Education : Less than basic,64.063,"(15, 29)"
+2017,Sex: Male,Age : 15-29,Education : Basic,1248.967,"(15, 29)"
+2017,Sex: Male,Age : 15-29,Education : Intermediate,1679.162,"(15, 29)"
+2017,Sex: Male,Age : 15-29,Education : Advanced,1077.501,"(15, 29)"
+2017,Sex: Male,Age : 15-29,Education : Level not stated,6.001,"(15, 29)"
+2017,Sex: Male,Age : 15-19,Education : Less than basic,22.36,"(15, 19)"
+2017,Sex: Male,Age : 15-19,Education : Basic,571.251,"(15, 19)"
+2017,Sex: Male,Age : 15-19,Education : Intermediate,683.513,"(15, 19)"
+2017,Sex: Male,Age : 15-19,Education : Advanced,128.648,"(15, 19)"
+2017,Sex: Male,Age : 20-24,Education : Less than basic,20.334,"(20, 24)"
+2017,Sex: Male,Age : 20-24,Education : Basic,325.983,"(20, 24)"
+2017,Sex: Male,Age : 20-24,Education : Intermediate,521.968,"(20, 24)"
+2017,Sex: Male,Age : 20-24,Education : Advanced,483.9,"(20, 24)"
+2017,Sex: Male,Age : 20-24,Education : Level not stated,1.894,"(20, 24)"
+2017,Sex: Male,Age : 25-29,Education : Less than basic,21.369,"(25, 29)"
+2017,Sex: Male,Age : 25-29,Education : Basic,351.733,"(25, 29)"
+2017,Sex: Male,Age : 25-29,Education : Intermediate,473.681,"(25, 29)"
+2017,Sex: Male,Age : 25-29,Education : Advanced,464.953,"(25, 29)"
+2017,Sex: Male,Age : 25-29,Education : Level not stated,4.107,"(25, 29)"
+2017,Sex: Female,Age : 15-29,Education : Less than basic,37.058,"(15, 29)"
+2017,Sex: Female,Age : 15-29,Education : Basic,899.453,"(15, 29)"
+2017,Sex: Female,Age : 15-29,Education : Intermediate,1490.682,"(15, 29)"
+2017,Sex: Female,Age : 15-29,Education : Advanced,1481.619,"(15, 29)"
+2017,Sex: Female,Age : 15-29,Education : Level not stated,4.009,"(15, 29)"
+2017,Sex: Female,Age : 15-19,Education : Less than basic,13.374,"(15, 19)"
+2017,Sex: Female,Age : 15-19,Education : Basic,443.703,"(15, 19)"
+2017,Sex: Female,Age : 15-19,Education : Intermediate,672.997,"(15, 19)"
+2017,Sex: Female,Age : 15-19,Education : Advanced,200.472,"(15, 19)"
+2017,Sex: Female,Age : 20-24,Education : Less than basic,8.338,"(20, 24)"
+2017,Sex: Female,Age : 20-24,Education : Basic,228.762,"(20, 24)"
+2017,Sex: Female,Age : 20-24,Education : Intermediate,429.503,"(20, 24)"
+2017,Sex: Female,Age : 20-24,Education : Advanced,629.04,"(20, 24)"
+2017,Sex: Female,Age : 20-24,Education : Level not stated,2.356,"(20, 24)"
+2017,Sex: Female,Age : 25-29,Education : Less than basic,15.346,"(25, 29)"
+2017,Sex: Female,Age : 25-29,Education : Basic,226.988,"(25, 29)"
+2017,Sex: Female,Age : 25-29,Education : Intermediate,388.182,"(25, 29)"
+2017,Sex: Female,Age : 25-29,Education : Advanced,652.107,"(25, 29)"
+2016,Sex: Male,Age : 15-29,Education : Less than basic,63.675,"(15, 29)"
+2016,Sex: Male,Age : 15-29,Education : Basic,1320.019,"(15, 29)"
+2016,Sex: Male,Age : 15-29,Education : Intermediate,1434.554,"(15, 29)"
+2016,Sex: Male,Age : 15-29,Education : Advanced,1230.304,"(15, 29)"
+2016,Sex: Male,Age : 15-19,Education : Less than basic,19.571,"(15, 19)"
+2016,Sex: Male,Age : 15-19,Education : Basic,687.474,"(15, 19)"
+2016,Sex: Male,Age : 15-19,Education : Intermediate,521.637,"(15, 19)"
+2016,Sex: Male,Age : 15-19,Education : Advanced,164.217,"(15, 19)"
+2016,Sex: Male,Age : 20-24,Education : Less than basic,18.342,"(20, 24)"
+2016,Sex: Male,Age : 20-24,Education : Basic,309.699,"(20, 24)"
+2016,Sex: Male,Age : 20-24,Education : Intermediate,473.312,"(20, 24)"
+2016,Sex: Male,Age : 20-24,Education : Advanced,542.389,"(20, 24)"
+2016,Sex: Male,Age : 25-29,Education : Less than basic,25.762,"(25, 29)"
+2016,Sex: Male,Age : 25-29,Education : Basic,322.846,"(25, 29)"
+2016,Sex: Male,Age : 25-29,Education : Intermediate,439.605,"(25, 29)"
+2016,Sex: Male,Age : 25-29,Education : Advanced,523.698,"(25, 29)"
+2016,Sex: Female,Age : 15-29,Education : Less than basic,29.448,"(15, 29)"
+2016,Sex: Female,Age : 15-29,Education : Basic,938.342,"(15, 29)"
+2016,Sex: Female,Age : 15-29,Education : Intermediate,1245.985,"(15, 29)"
+2016,Sex: Female,Age : 15-29,Education : Advanced,1679.49,"(15, 29)"
+2016,Sex: Female,Age : 15-29,Education : Level not stated,0.954,"(15, 29)"
+2016,Sex: Female,Age : 15-19,Education : Less than basic,9.711,"(15, 19)"
+2016,Sex: Female,Age : 15-19,Education : Basic,538.116,"(15, 19)"
+2016,Sex: Female,Age : 15-19,Education : Intermediate,548.022,"(15, 19)"
+2016,Sex: Female,Age : 15-19,Education : Advanced,224.213,"(15, 19)"
+2016,Sex: Female,Age : 20-24,Education : Less than basic,9.633,"(20, 24)"
+2016,Sex: Female,Age : 20-24,Education : Basic,195.314,"(20, 24)"
+2016,Sex: Female,Age : 20-24,Education : Intermediate,375.773,"(20, 24)"
+2016,Sex: Female,Age : 20-24,Education : Advanced,709.469,"(20, 24)"
+2016,Sex: Female,Age : 25-29,Education : Less than basic,10.104,"(25, 29)"
+2016,Sex: Female,Age : 25-29,Education : Basic,204.912,"(25, 29)"
+2016,Sex: Female,Age : 25-29,Education : Intermediate,322.19,"(25, 29)"
+2016,Sex: Female,Age : 25-29,Education : Advanced,745.808,"(25, 29)"
+2012,Sex: Male,Age : 15-29,Education : Less than basic,69.319,"(15, 29)"
+2012,Sex: Male,Age : 15-29,Education : Basic,2193.967,"(15, 29)"
+2012,Sex: Male,Age : 15-29,Education : Intermediate,643.862,"(15, 29)"
+2012,Sex: Male,Age : 15-29,Education : Advanced,1073.576,"(15, 29)"
+2012,Sex: Male,Age : 15-29,Education : Level not stated,1.978,"(15, 29)"
+2012,Sex: Male,Age : 15-19,Education : Less than basic,21.297,"(15, 19)"
+2012,Sex: Male,Age : 15-19,Education : Basic,944.534,"(15, 19)"
+2012,Sex: Male,Age : 15-19,Education : Intermediate,259.19,"(15, 19)"
+2012,Sex: Male,Age : 15-19,Education : Advanced,147.022,"(15, 19)"
+2012,Sex: Male,Age : 20-24,Education : Less than basic,21.529,"(20, 24)"
+2012,Sex: Male,Age : 20-24,Education : Basic,623.42,"(20, 24)"
+2012,Sex: Male,Age : 20-24,Education : Intermediate,206.48,"(20, 24)"
+2012,Sex: Male,Age : 20-24,Education : Advanced,496.557,"(20, 24)"
+2012,Sex: Male,Age : 20-24,Education : Level not stated,0.546,"(20, 24)"
+2012,Sex: Male,Age : 25-29,Education : Less than basic,26.494,"(25, 29)"
+2012,Sex: Male,Age : 25-29,Education : Basic,626.014,"(25, 29)"
+2012,Sex: Male,Age : 25-29,Education : Intermediate,178.191,"(25, 29)"
+2012,Sex: Male,Age : 25-29,Education : Advanced,429.997,"(25, 29)"
+2012,Sex: Male,Age : 25-29,Education : Level not stated,1.266,"(25, 29)"
+2012,Sex: Female,Age : 15-29,Education : Less than basic,47.594,"(15, 29)"
+2012,Sex: Female,Age : 15-29,Education : Basic,1724.931,"(15, 29)"
+2012,Sex: Female,Age : 15-29,Education : Intermediate,607.243,"(15, 29)"
+2012,Sex: Female,Age : 15-29,Education : Advanced,1502.552,"(15, 29)"
+2012,Sex: Female,Age : 15-29,Education : Level not stated,0.948,"(15, 29)"
+2012,Sex: Female,Age : 15-19,Education : Less than basic,13.668,"(15, 19)"
+2012,Sex: Female,Age : 15-19,Education : Basic,815.41,"(15, 19)"
+2012,Sex: Female,Age : 15-19,Education : Intermediate,278.284,"(15, 19)"
+2012,Sex: Female,Age : 15-19,Education : Advanced,214.278,"(15, 19)"
+2012,Sex: Female,Age : 20-24,Education : Less than basic,16.06,"(20, 24)"
+2012,Sex: Female,Age : 20-24,Education : Basic,448.564,"(20, 24)"
+2012,Sex: Female,Age : 20-24,Education : Intermediate,177.014,"(20, 24)"
+2012,Sex: Female,Age : 20-24,Education : Advanced,671.949,"(20, 24)"
+2012,Sex: Female,Age : 20-24,Education : Level not stated,0.583,"(20, 24)"
+2012,Sex: Female,Age : 25-29,Education : Less than basic,17.866,"(25, 29)"
+2012,Sex: Female,Age : 25-29,Education : Basic,460.957,"(25, 29)"
+2012,Sex: Female,Age : 25-29,Education : Intermediate,151.944,"(25, 29)"
+2012,Sex: Female,Age : 25-29,Education : Advanced,616.326,"(25, 29)"
+2011,Sex: Male,Age : 15-29,Education : Less than basic,77.408,"(15, 29)"
+2011,Sex: Male,Age : 15-29,Education : Basic,2855.186,"(15, 29)"
+2011,Sex: Male,Age : 15-29,Education : Advanced,1021.372,"(15, 29)"
+2011,Sex: Male,Age : 15-29,Education : Level not stated,2.454,"(15, 29)"
+2011,Sex: Male,Age : 15-19,Education : Less than basic,24.238,"(15, 19)"
+2011,Sex: Male,Age : 15-19,Education : Basic,1197.843,"(15, 19)"
+2011,Sex: Male,Age : 15-19,Education : Advanced,147.024,"(15, 19)"
+2011,Sex: Male,Age : 15-19,Education : Level not stated,0.331,"(15, 19)"
+2011,Sex: Male,Age : 20-24,Education : Less than basic,23.683,"(20, 24)"
+2011,Sex: Male,Age : 20-24,Education : Basic,840.749,"(20, 24)"
+2011,Sex: Male,Age : 20-24,Education : Advanced,481.869,"(20, 24)"
+2011,Sex: Male,Age : 20-24,Education : Level not stated,0.754,"(20, 24)"
+2011,Sex: Male,Age : 25-29,Education : Less than basic,29.486,"(25, 29)"
+2011,Sex: Male,Age : 25-29,Education : Basic,816.594,"(25, 29)"
+2011,Sex: Male,Age : 25-29,Education : Advanced,392.479,"(25, 29)"
+2011,Sex: Male,Age : 25-29,Education : Level not stated,1.368,"(25, 29)"
+2011,Sex: Female,Age : 15-29,Education : Less than basic,51.259,"(15, 29)"
+2011,Sex: Female,Age : 15-29,Education : Basic,2358.015,"(15, 29)"
+2011,Sex: Female,Age : 15-29,Education : Advanced,1448.486,"(15, 29)"
+2011,Sex: Female,Age : 15-29,Education : Level not stated,1.123,"(15, 29)"
+2011,Sex: Female,Age : 15-19,Education : Less than basic,13.728,"(15, 19)"
+2011,Sex: Female,Age : 15-19,Education : Basic,1103.372,"(15, 19)"
+2011,Sex: Female,Age : 15-19,Education : Advanced,202.077,"(15, 19)"
+2011,Sex: Female,Age : 20-24,Education : Less than basic,19.274,"(20, 24)"
+2011,Sex: Female,Age : 20-24,Education : Basic,628.132,"(20, 24)"
+2011,Sex: Female,Age : 20-24,Education : Advanced,665.397,"(20, 24)"
+2011,Sex: Female,Age : 20-24,Education : Level not stated,0.384,"(20, 24)"
+2011,Sex: Female,Age : 25-29,Education : Less than basic,18.257,"(25, 29)"
+2011,Sex: Female,Age : 25-29,Education : Basic,626.511,"(25, 29)"
+2011,Sex: Female,Age : 25-29,Education : Advanced,581.012,"(25, 29)"
+2011,Sex: Female,Age : 25-29,Education : Level not stated,0.601,"(25, 29)"
+2010,Sex: Male,Age : 15-29,Education : Less than basic,83.114,"(15, 29)"
+2010,Sex: Male,Age : 15-29,Education : Basic,2897.826,"(15, 29)"
+2010,Sex: Male,Age : 15-29,Education : Advanced,943.383,"(15, 29)"
+2010,Sex: Male,Age : 15-29,Education : Level not stated,2.584,"(15, 29)"
+2010,Sex: Male,Age : 15-19,Education : Less than basic,26.126,"(15, 19)"
+2010,Sex: Male,Age : 15-19,Education : Basic,1209.178,"(15, 19)"
+2010,Sex: Male,Age : 15-19,Education : Advanced,130.356,"(15, 19)"
+2010,Sex: Male,Age : 20-24,Education : Less than basic,26.688,"(20, 24)"
+2010,Sex: Male,Age : 20-24,Education : Basic,862.013,"(20, 24)"
+2010,Sex: Male,Age : 20-24,Education : Advanced,453.062,"(20, 24)"
+2010,Sex: Male,Age : 20-24,Education : Level not stated,0.878,"(20, 24)"
+2010,Sex: Male,Age : 25-29,Education : Less than basic,30.3,"(25, 29)"
+2010,Sex: Male,Age : 25-29,Education : Basic,826.636,"(25, 29)"
+2010,Sex: Male,Age : 25-29,Education : Advanced,359.965,"(25, 29)"
+2010,Sex: Male,Age : 25-29,Education : Level not stated,0.533,"(25, 29)"
+2010,Sex: Female,Age : 15-29,Education : Less than basic,54.228,"(15, 29)"
+2010,Sex: Female,Age : 15-29,Education : Basic,2384.304,"(15, 29)"
+2010,Sex: Female,Age : 15-29,Education : Advanced,1392.313,"(15, 29)"
+2010,Sex: Female,Age : 15-29,Education : Level not stated,1.416,"(15, 29)"
+2010,Sex: Female,Age : 15-19,Education : Less than basic,14.684,"(15, 19)"
+2010,Sex: Female,Age : 15-19,Education : Basic,1105.266,"(15, 19)"
+2010,Sex: Female,Age : 15-19,Education : Advanced,197.246,"(15, 19)"
+2010,Sex: Female,Age : 20-24,Education : Less than basic,20.191,"(20, 24)"
+2010,Sex: Female,Age : 20-24,Education : Basic,639.33,"(20, 24)"
+2010,Sex: Female,Age : 20-24,Education : Advanced,649.404,"(20, 24)"
+2010,Sex: Female,Age : 20-24,Education : Level not stated,0.73,"(20, 24)"
+2010,Sex: Female,Age : 25-29,Education : Less than basic,19.352,"(25, 29)"
+2010,Sex: Female,Age : 25-29,Education : Basic,639.708,"(25, 29)"
+2010,Sex: Female,Age : 25-29,Education : Advanced,545.663,"(25, 29)"
+2010,Sex: Female,Age : 25-29,Education : Level not stated,0.527,"(25, 29)"
+2009,Sex: Male,Age : 15-29,Education : Less than basic,84.846,"(15, 29)"
+2009,Sex: Male,Age : 15-29,Education : Basic,2923.138,"(15, 29)"
+2009,Sex: Male,Age : 15-29,Education : Advanced,875.154,"(15, 29)"
+2009,Sex: Male,Age : 15-29,Education : Level not stated,2.789,"(15, 29)"
+2009,Sex: Male,Age : 15-19,Education : Less than basic,25.182,"(15, 19)"
+2009,Sex: Male,Age : 15-19,Education : Basic,1209.786,"(15, 19)"
+2009,Sex: Male,Age : 15-19,Education : Advanced,130.479,"(15, 19)"
+2009,Sex: Male,Age : 15-19,Education : Level not stated,0.399,"(15, 19)"
+2009,Sex: Male,Age : 20-24,Education : Less than basic,25.98,"(20, 24)"
+2009,Sex: Male,Age : 20-24,Education : Basic,878.396,"(20, 24)"
+2009,Sex: Male,Age : 20-24,Education : Advanced,418.315,"(20, 24)"
+2009,Sex: Male,Age : 20-24,Education : Level not stated,0.698,"(20, 24)"
+2009,Sex: Male,Age : 25-29,Education : Less than basic,33.684,"(25, 29)"
+2009,Sex: Male,Age : 25-29,Education : Basic,834.956,"(25, 29)"
+2009,Sex: Male,Age : 25-29,Education : Advanced,326.36,"(25, 29)"
+2009,Sex: Male,Age : 25-29,Education : Level not stated,1.692,"(25, 29)"
+2009,Sex: Female,Age : 15-29,Education : Less than basic,56.38,"(15, 29)"
+2009,Sex: Female,Age : 15-29,Education : Basic,2410.914,"(15, 29)"
+2009,Sex: Female,Age : 15-29,Education : Advanced,1323.182,"(15, 29)"
+2009,Sex: Female,Age : 15-29,Education : Level not stated,2.461,"(15, 29)"
+2009,Sex: Female,Age : 15-19,Education : Less than basic,17.477,"(15, 19)"
+2009,Sex: Female,Age : 15-19,Education : Basic,1092.974,"(15, 19)"
+2009,Sex: Female,Age : 15-19,Education : Advanced,205.862,"(15, 19)"
+2009,Sex: Female,Age : 15-19,Education : Level not stated,0.4,"(15, 19)"
+2009,Sex: Female,Age : 20-24,Education : Less than basic,20.374,"(20, 24)"
+2009,Sex: Female,Age : 20-24,Education : Basic,667.656,"(20, 24)"
+2009,Sex: Female,Age : 20-24,Education : Advanced,602.357,"(20, 24)"
+2009,Sex: Female,Age : 20-24,Education : Level not stated,1.208,"(20, 24)"
+2009,Sex: Female,Age : 25-29,Education : Less than basic,18.529,"(25, 29)"
+2009,Sex: Female,Age : 25-29,Education : Basic,650.285,"(25, 29)"
+2009,Sex: Female,Age : 25-29,Education : Advanced,514.963,"(25, 29)"
+2009,Sex: Female,Age : 25-29,Education : Level not stated,0.853,"(25, 29)"
+2008,Sex: Male,Age : 15-29,Education : Less than basic,78.042,"(15, 29)"
+2008,Sex: Male,Age : 15-29,Education : Basic,2957.104,"(15, 29)"
+2008,Sex: Male,Age : 15-29,Education : Advanced,800.454,"(15, 29)"
+2008,Sex: Male,Age : 15-29,Education : Level not stated,7.131,"(15, 29)"
+2008,Sex: Male,Age : 15-19,Education : Less than basic,23.674,"(15, 19)"
+2008,Sex: Male,Age : 15-19,Education : Basic,1215.906,"(15, 19)"
+2008,Sex: Male,Age : 15-19,Education : Advanced,124.23,"(15, 19)"
+2008,Sex: Male,Age : 15-19,Education : Level not stated,1.042,"(15, 19)"
+2008,Sex: Male,Age : 20-24,Education : Less than basic,26.526,"(20, 24)"
+2008,Sex: Male,Age : 20-24,Education : Basic,894.685,"(20, 24)"
+2008,Sex: Male,Age : 20-24,Education : Advanced,377.856,"(20, 24)"
+2008,Sex: Male,Age : 20-24,Education : Level not stated,2.6,"(20, 24)"
+2008,Sex: Male,Age : 25-29,Education : Less than basic,27.843,"(25, 29)"
+2008,Sex: Male,Age : 25-29,Education : Basic,846.513,"(25, 29)"
+2008,Sex: Male,Age : 25-29,Education : Advanced,298.368,"(25, 29)"
+2008,Sex: Male,Age : 25-29,Education : Level not stated,3.489,"(25, 29)"
+2008,Sex: Female,Age : 15-29,Education : Less than basic,45.642,"(15, 29)"
+2008,Sex: Female,Age : 15-29,Education : Basic,2488.492,"(15, 29)"
+2008,Sex: Female,Age : 15-29,Education : Advanced,1212.078,"(15, 29)"
+2008,Sex: Female,Age : 15-29,Education : Level not stated,4.397,"(15, 29)"
+2008,Sex: Female,Age : 15-19,Education : Less than basic,14.944,"(15, 19)"
+2008,Sex: Female,Age : 15-19,Education : Basic,1110.347,"(15, 19)"
+2008,Sex: Female,Age : 15-19,Education : Advanced,190.224,"(15, 19)"
+2008,Sex: Female,Age : 15-19,Education : Level not stated,0.957,"(15, 19)"
+2008,Sex: Female,Age : 20-24,Education : Less than basic,14.422,"(20, 24)"
+2008,Sex: Female,Age : 20-24,Education : Basic,694.92,"(20, 24)"
+2008,Sex: Female,Age : 20-24,Education : Advanced,559.402,"(20, 24)"
+2008,Sex: Female,Age : 20-24,Education : Level not stated,1.72,"(20, 24)"
+2008,Sex: Female,Age : 25-29,Education : Less than basic,16.276,"(25, 29)"
+2008,Sex: Female,Age : 25-29,Education : Basic,683.224,"(25, 29)"
+2008,Sex: Female,Age : 25-29,Education : Advanced,462.452,"(25, 29)"
+2008,Sex: Female,Age : 25-29,Education : Level not stated,1.72,"(25, 29)"
+2007,Sex: Male,Age : 15-29,Education : Less than basic,81.152,"(15, 29)"
+2007,Sex: Male,Age : 15-29,Education : Basic,2990.587,"(15, 29)"
+2007,Sex: Male,Age : 15-29,Education : Advanced,719.458,"(15, 29)"
+2007,Sex: Male,Age : 15-29,Education : Level not stated,8.308,"(15, 29)"
+2007,Sex: Male,Age : 15-19,Education : Less than basic,21.494,"(15, 19)"
+2007,Sex: Male,Age : 15-19,Education : Basic,1239.838,"(15, 19)"
+2007,Sex: Male,Age : 15-19,Education : Advanced,101.258,"(15, 19)"
+2007,Sex: Male,Age : 15-19,Education : Level not stated,1.156,"(15, 19)"
+2007,Sex: Male,Age : 20-24,Education : Less than basic,31.788,"(20, 24)"
+2007,Sex: Male,Age : 20-24,Education : Basic,901.39,"(20, 24)"
+2007,Sex: Male,Age : 20-24,Education : Advanced,343.696,"(20, 24)"
+2007,Sex: Male,Age : 20-24,Education : Level not stated,2.844,"(20, 24)"
+2007,Sex: Male,Age : 25-29,Education : Less than basic,27.869,"(25, 29)"
+2007,Sex: Male,Age : 25-29,Education : Basic,849.36,"(25, 29)"
+2007,Sex: Male,Age : 25-29,Education : Advanced,274.504,"(25, 29)"
+2007,Sex: Male,Age : 25-29,Education : Level not stated,4.309,"(25, 29)"
+2007,Sex: Female,Age : 15-29,Education : Less than basic,47.94,"(15, 29)"
+2007,Sex: Female,Age : 15-29,Education : Basic,2572.944,"(15, 29)"
+2007,Sex: Female,Age : 15-29,Education : Advanced,1084.343,"(15, 29)"
+2007,Sex: Female,Age : 15-29,Education : Level not stated,3.586,"(15, 29)"
+2007,Sex: Female,Age : 15-19,Education : Less than basic,14.876,"(15, 19)"
+2007,Sex: Female,Age : 15-19,Education : Basic,1143.814,"(15, 19)"
+2007,Sex: Female,Age : 15-19,Education : Advanced,156.327,"(15, 19)"
+2007,Sex: Female,Age : 15-19,Education : Level not stated,0.61,"(15, 19)"
+2007,Sex: Female,Age : 20-24,Education : Less than basic,15.746,"(20, 24)"
+2007,Sex: Female,Age : 20-24,Education : Basic,726.678,"(20, 24)"
+2007,Sex: Female,Age : 20-24,Education : Advanced,506.102,"(20, 24)"
+2007,Sex: Female,Age : 20-24,Education : Level not stated,1.234,"(20, 24)"
+2007,Sex: Female,Age : 25-29,Education : Less than basic,17.317,"(25, 29)"
+2007,Sex: Female,Age : 25-29,Education : Basic,702.452,"(25, 29)"
+2007,Sex: Female,Age : 25-29,Education : Advanced,421.915,"(25, 29)"
+2007,Sex: Female,Age : 25-29,Education : Level not stated,1.742,"(25, 29)"
+2006,Sex: Male,Age : 15-29,Education : Less than basic,89.058,"(15, 29)"
+2006,Sex: Male,Age : 15-29,Education : Basic,3014.938,"(15, 29)"
+2006,Sex: Male,Age : 15-29,Education : Advanced,644.381,"(15, 29)"
+2006,Sex: Male,Age : 15-29,Education : Level not stated,6.729,"(15, 29)"
+2006,Sex: Male,Age : 15-19,Education : Less than basic,28.03,"(15, 19)"
+2006,Sex: Male,Age : 15-19,Education : Basic,1247.352,"(15, 19)"
+2006,Sex: Male,Age : 15-19,Education : Advanced,86.26,"(15, 19)"
+2006,Sex: Male,Age : 15-19,Education : Level not stated,0.913,"(15, 19)"
+2006,Sex: Male,Age : 20-24,Education : Less than basic,28.149,"(20, 24)"
+2006,Sex: Male,Age : 20-24,Education : Basic,917.146,"(20, 24)"
+2006,Sex: Male,Age : 20-24,Education : Advanced,310.024,"(20, 24)"
+2006,Sex: Male,Age : 20-24,Education : Level not stated,2.441,"(20, 24)"
+2006,Sex: Male,Age : 25-29,Education : Less than basic,32.879,"(25, 29)"
+2006,Sex: Male,Age : 25-29,Education : Basic,850.44,"(25, 29)"
+2006,Sex: Male,Age : 25-29,Education : Advanced,248.097,"(25, 29)"
+2006,Sex: Male,Age : 25-29,Education : Level not stated,3.376,"(25, 29)"
+2006,Sex: Female,Age : 15-29,Education : Less than basic,56.742,"(15, 29)"
+2006,Sex: Female,Age : 15-29,Education : Basic,2626.802,"(15, 29)"
+2006,Sex: Female,Age : 15-29,Education : Advanced,978.878,"(15, 29)"
+2006,Sex: Female,Age : 15-29,Education : Level not stated,4.092,"(15, 29)"
+2006,Sex: Female,Age : 15-19,Education : Less than basic,19.02,"(15, 19)"
+2006,Sex: Female,Age : 15-19,Education : Basic,1152.504,"(15, 19)"
+2006,Sex: Female,Age : 15-19,Education : Advanced,143.022,"(15, 19)"
+2006,Sex: Female,Age : 15-19,Education : Level not stated,0.644,"(15, 19)"
+2006,Sex: Female,Age : 20-24,Education : Less than basic,16.506,"(20, 24)"
+2006,Sex: Female,Age : 20-24,Education : Basic,757.852,"(20, 24)"
+2006,Sex: Female,Age : 20-24,Education : Advanced,453.343,"(20, 24)"
+2006,Sex: Female,Age : 20-24,Education : Level not stated,1.079,"(20, 24)"
+2006,Sex: Female,Age : 25-29,Education : Less than basic,21.216,"(25, 29)"
+2006,Sex: Female,Age : 25-29,Education : Basic,716.444,"(25, 29)"
+2006,Sex: Female,Age : 25-29,Education : Advanced,382.512,"(25, 29)"
+2006,Sex: Female,Age : 25-29,Education : Level not stated,2.368,"(25, 29)"
+2005,Sex: Male,Age : 15-29,Education : Less than basic,98.532,"(15, 29)"
+2005,Sex: Male,Age : 15-29,Education : Basic,3052.434,"(15, 29)"
+2005,Sex: Male,Age : 15-29,Education : Advanced,573.299,"(15, 29)"
+2005,Sex: Male,Age : 15-29,Education : Level not stated,11.682,"(15, 29)"
+2005,Sex: Male,Age : 15-19,Education : Less than basic,29.306,"(15, 19)"
+2005,Sex: Male,Age : 15-19,Education : Basic,1254.562,"(15, 19)"
+2005,Sex: Male,Age : 15-19,Education : Advanced,74.974,"(15, 19)"
+2005,Sex: Male,Age : 15-19,Education : Level not stated,2.402,"(15, 19)"
+2005,Sex: Male,Age : 20-24,Education : Less than basic,31.433,"(20, 24)"
+2005,Sex: Male,Age : 20-24,Education : Basic,933.222,"(20, 24)"
+2005,Sex: Male,Age : 20-24,Education : Advanced,274.978,"(20, 24)"
+2005,Sex: Male,Age : 20-24,Education : Level not stated,4.843,"(20, 24)"
+2005,Sex: Male,Age : 25-29,Education : Less than basic,37.793,"(25, 29)"
+2005,Sex: Male,Age : 25-29,Education : Basic,864.648,"(25, 29)"
+2005,Sex: Male,Age : 25-29,Education : Advanced,223.347,"(25, 29)"
+2005,Sex: Male,Age : 25-29,Education : Level not stated,4.436,"(25, 29)"
+2005,Sex: Female,Age : 15-29,Education : Less than basic,56.499,"(15, 29)"
+2005,Sex: Female,Age : 15-29,Education : Basic,2692.8,"(15, 29)"
+2005,Sex: Female,Age : 15-29,Education : Advanced,864.301,"(15, 29)"
+2005,Sex: Female,Age : 15-29,Education : Level not stated,6.947,"(15, 29)"
+2005,Sex: Female,Age : 15-19,Education : Less than basic,16.728,"(15, 19)"
+2005,Sex: Female,Age : 15-19,Education : Basic,1158.579,"(15, 19)"
+2005,Sex: Female,Age : 15-19,Education : Advanced,132.512,"(15, 19)"
+2005,Sex: Female,Age : 15-19,Education : Level not stated,2.048,"(15, 19)"
+2005,Sex: Female,Age : 20-24,Education : Less than basic,18.162,"(20, 24)"
+2005,Sex: Female,Age : 20-24,Education : Basic,795.928,"(20, 24)"
+2005,Sex: Female,Age : 20-24,Education : Advanced,390.579,"(20, 24)"
+2005,Sex: Female,Age : 20-24,Education : Level not stated,2.299,"(20, 24)"
+2005,Sex: Female,Age : 25-29,Education : Less than basic,21.608,"(25, 29)"
+2005,Sex: Female,Age : 25-29,Education : Basic,738.294,"(25, 29)"
+2005,Sex: Female,Age : 25-29,Education : Advanced,341.21,"(25, 29)"
+2005,Sex: Female,Age : 25-29,Education : Level not stated,2.6,"(25, 29)"
