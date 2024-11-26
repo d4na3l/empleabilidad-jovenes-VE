@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import font
+import webbrowser  # Importar el módulo webbrowser
 from config import COLOR_BARRA_SUPERIOR, COLOR_MENU_LATERAL, COLOR_CUERPO_PRINCIPAL, COLOR_MENU_CURSOR_ENCIMA
 import util.util_ventana as util_ventana
 import util.util_imagenes as util_img
@@ -7,8 +8,8 @@ import util.util_imagenes as util_img
 class FormularioMaestroDesign(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.logo = util_img.leer_imagen("./img/logo.png", (700, 500))
-        self.perfil = util_img.leer_imagen("./img/Perfil.png", (100, 100))
+        self.logo = util_img.leer_imagen("./empleabilidad-jovenes-VE/img/logo.png", (700, 500))
+        self.perfil = util_img.leer_imagen("./empleabilidad-jovenes-VE/img/Perfil.png", (100, 100))
         self.imagenes = [self.logo, self.perfil]
         self.config_window()
         self.paneles()
@@ -18,7 +19,7 @@ class FormularioMaestroDesign(tk.Tk):
 
     def config_window(self):
         self.title('Empleabilidad Jovenes VE')
-        # self.iconbitmap("./img/logo.ico")
+        self.iconbitmap("./empleabilidad-jovenes-VE/img/logo.ico")
         w, h = 1024, 600
         util_ventana.centrar_ventana(self, w, h)
 
@@ -43,9 +44,14 @@ class FormularioMaestroDesign(tk.Tk):
                                            command=self.toggle_panel, bd=0, bg=COLOR_BARRA_SUPERIOR, fg="white")
         self.buttonMenuLateral.pack(side=tk.LEFT)
 
-        self.labelTitulo = tk.Label(self.barra_superior, text="https://github.com/d4na3l/empleabilidad-jovenes-VE")
-        self.labelTitulo.config(fg="#fff", font=("Roboto", 10), bg=COLOR_BARRA_SUPERIOR, padx=30, width=40)
-        self.labelTitulo.pack(side=tk.RIGHT)
+        # Crear un label para el enlace de GitHub
+        self.github_link = tk.Label(self.barra_superior, text="https://github.com/d4na3l/empleabilidad-jovenes-VE", fg="white", cursor="hand2")
+        self.github_link.config(font=("Roboto", 10), bg=COLOR_BARRA_SUPERIOR, padx=30, width=40)
+        self.github_link.pack(side=tk.RIGHT)
+        self.github_link.bind("<Button-1>", self.open_github)  # Vincular el clic al método open_github
+
+    def open_github(self, event):
+        webbrowser.open("https://github.com/d4na3l/empleabilidad-jovenes-VE")  # Abrir el enlace en el navegador
 
     def controles_menu_lateral(self):
         font_awesome = font.Font(family='FontAwesome', size=15)
@@ -53,11 +59,11 @@ class FormularioMaestroDesign(tk.Tk):
         self.labelPerfil.pack(side=tk.TOP, pady=10)
 
         buttons_info = [
-            ("Dashboard", "\uf109", self.mostrar_panel_graficas),
-            ("DataSets", "\uf007", self.mostrar_sitio_data_sets),
-            ("Equipo", "\uf03e", self.mostrar_panel_equipo),
-            ("Info", "\uf129", self.mostrar_panel_info),
-            ("Inicio", "\uf013", self.mostrar_formulario_maestro)
+            ("Dashboard", "\uf109", self.mostrar_panel_graficas),  # Icono de Dashboard
+            ("DataSets", "\uf007", self.mostrar_sitio_data_sets),  # Icono de DataSets
+            ("Equipo", "\uf03e", self.mostrar_panel_equipo),  # Icono de Equipo
+            ("Info", "\uf129", self.mostrar_panel_info),  # Icono de Info
+            ("Inicio", "\uf013", self.mostrar_formulario_maestro)  # Icono de Inicio
         ]
         for text, icon, comando in buttons_info:
             self.configurar_boton_menu(text, icon, font_awesome, comando)
@@ -100,13 +106,11 @@ class FormularioMaestroDesign(tk.Tk):
         from src.forms.form_graficas_design import FormularioGraficasDesign
         FormularioGraficasDesign(self.cuerpo_principal)  # Crea y muestra el nuevo panel
 
-
     def mostrar_sitio_data_sets(self):
         """Cambia la vista al panel de conjunto de datos."""
         self.limpiar_panel()  # Limpia el contenido actual del cuerpo principal
         from src.forms.form_sitio_data_Sets import FormularioSitioDataSets
         FormularioSitioDataSets(self.cuerpo_principal)  # Crea y muestra el nuevo panel
-
 
     def mostrar_panel_info(self):
         """Cambia la vista al panel de información del sistema."""
@@ -114,15 +118,14 @@ class FormularioMaestroDesign(tk.Tk):
         from src.forms.form_info_design import FormularioInfoDesign
         FormularioInfoDesign(self.cuerpo_principal)  # Inicializa y muestra el nuevo panel
 
-
     def mostrar_panel_equipo(self):
         """Cambia la vista al panel de información del equipo."""
         self.limpiar_panel()  # Limpia el contenido actual del cuerpo principal
         from src.forms.form_sitio_equipo import FormularioSitioEquipo
         FormularioSitioEquipo(self.cuerpo_principal)  # Inicializa y muestra el nuevo panel
 
-
     def mostrar_formulario_maestro(self):
         self.limpiar_panel()
         label = tk.Label(self.cuerpo_principal, image=self.logo, bg=COLOR_CUERPO_PRINCIPAL)
         label.place(x=0, y=0, relwidth=1, relheight=1)
+
