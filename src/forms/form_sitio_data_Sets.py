@@ -62,7 +62,7 @@ class FormularioSitioDataSets:
         self.title = ' '.join([part.upper() for part in archivo_seleccionado.split('.')[0].split('_')[1:-1]])
 
         if archivo_seleccionado:
-            ruta_archivo = f"./data/raw/{archivo_seleccionado}"
+            ruta_archivo = obtener_ruta_absoluta(f'data/raw/{archivo_seleccionado}')
             try:
                 # Usar la función process_pipeline para procesar el archivo CSV
                 rename_map = {
