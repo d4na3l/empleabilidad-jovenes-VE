@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import re
 import warnings
+from util.util_rutas import obtener_ruta_absoluta
+
 
 def load_data(filepath, rename_columns=None, columns_to_keep=None):
     """
@@ -155,11 +157,11 @@ def analyze_dataset(df):
     }
 
 
-def export_dataframe(df, filename, filepath='./data/processed/'):
+def export_dataframe(df, filename, filepath=obtener_ruta_absoluta('data/processed')):
     """
     Export the DataFrame to a CSV file.
     """
-    full_path = f"{filepath}{filename}"
+    full_path = f"{filepath}/{filename}"
     df.to_csv(full_path, index=False)
 
 def process_pipeline(filepath, rename_columns=None, columns_to_keep=None, min_allowed=15, max_allowed=30):
@@ -191,7 +193,6 @@ def process_pipeline(filepath, rename_columns=None, columns_to_keep=None, min_al
     # Llenar valores faltantes (ignorar columnas que no estén presentes)
     group_cols = [col for col in ['sex', 'classif1', 'classif2'] if col in df.columns]
     df = fill_missing_values(df, group_cols)
-
     # Exportar resultados
     export_dataframe(df, 'cleanned_'+filepath.split('/')[-1])
     return df
