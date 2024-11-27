@@ -4,12 +4,15 @@ from tkinter import ttk
 import os
 import pandas as pd
 from src.processing_data.oit_data_processor import process_pipeline  # Importar la función process_pipeline
+from util.util_rutas import obtener_ruta_absoluta
+
 
 class FormularioSitioDataSets:
     def __init__(self, parent):
         self.parent = parent
         self.cuerpo_principal = parent
         self.df = None  # Agregamos una variable para almacenar el DataFrame
+        self.title = None
 
         self.limpiar_cuerpo_principal()
         self.crear_barra_superior()
@@ -31,7 +34,7 @@ class FormularioSitioDataSets:
 
     def mostrar_archivos_csv(self):
         """Muestra los archivos CSV disponibles en un combobox."""
-        directorio_csv = "./empleabilidad-jovenes-VE/data/raw"
+        directorio_csv = obtener_ruta_absoluta("data/raw")
 
         try:
             archivos = [f for f in os.listdir(directorio_csv) if f.endswith('.csv')]
@@ -56,9 +59,10 @@ class FormularioSitioDataSets:
     def generar_dataframes(self):
         """Carga y muestra todos los DataFrames generados a partir del archivo CSV seleccionado."""
         archivo_seleccionado = self.combobox_archivos.get()
+        self.title = ' '.join([part.upper() for part in archivo_seleccionado.split('.')[0].split('_')[1:-1]])
+
         if archivo_seleccionado:
-            ruta_archivo = ".\empleabilidad-jovenes-VE\data\raw\{archivo_seleccionado}"
-            print(ruta_archivo)
+            ruta_archivo = f"./data/raw/{archivo_seleccionado}"
             try:
                 # Usar la función process_pipeline para procesar el archivo CSV
                 rename_map = {
@@ -135,11 +139,11 @@ class FormularioSitioDataSets:
         if self.df is None:
             messagebox.showwarning("Advertencia", "Primero debes cargar un archivo CSV.")
             return
-        
+
         self.limpiar_cuerpo_principal()  # Limpia el contenido actual del cuerpo principal
         # Crear la instancia de FormularioGraficasDesign y pasar el DataFrame
         from src.forms.form_graficas_design import FormularioGraficasDesign
-        FormularioGraficasDesign(self.cuerpo_principal, self.df)  # Pasamos el df aquí
+        FormularioGraficasDesign(self.cuerpo_principal, self.df, self.title)  # Pasamos el df aquí
 
     def borrar_todo(self):
         """Borra el contenido actual y permite seleccionar un nuevo CSV."""

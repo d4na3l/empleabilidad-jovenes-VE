@@ -166,7 +166,7 @@ def analyze_dataset(df):
         'unique_values': {col: df[col].unique().tolist() for col in df.columns if df[col].nunique() < 50}
     }
 
-def export_dataframe(df, filename, filepath='../data/processed/'):
+def export_dataframe(df, filename, filepath='./data/processed/'):
     """
     Export the DataFrame to a CSV file.
     """
