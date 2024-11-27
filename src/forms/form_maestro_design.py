@@ -4,12 +4,14 @@ import webbrowser  # Importar el módulo webbrowser
 from config import COLOR_BARRA_SUPERIOR, COLOR_MENU_LATERAL, COLOR_CUERPO_PRINCIPAL, COLOR_MENU_CURSOR_ENCIMA
 import util.util_ventana as util_ventana
 import util.util_imagenes as util_img
+from util.util_rutas import obtener_ruta_absoluta
 
 class FormularioMaestroDesign(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.logo = util_img.leer_imagen("./empleabilidad-jovenes-VE/img/logo.png", (700, 500))
-        self.perfil = util_img.leer_imagen("./empleabilidad-jovenes-VE/img/Perfil.png", (100, 100))
+        # Cargar imágenes usando rutas relativas al proyecto
+        self.logo = util_img.leer_imagen("img/logo.png", (700, 500))
+        self.perfil = util_img.leer_imagen("img/Perfil.png", (100, 100))
         self.imagenes = [self.logo, self.perfil]
         self.config_window()
         self.paneles()
@@ -19,7 +21,7 @@ class FormularioMaestroDesign(tk.Tk):
 
     def config_window(self):
         self.title('Empleabilidad Jovenes VE')
-        self.iconbitmap("./empleabilidad-jovenes-VE/img/logo.ico")
+        # self.iconbitmap(obtener_ruta_absoluta("img/logo.ico"))
         w, h = 1024, 600
         util_ventana.centrar_ventana(self, w, h)
 

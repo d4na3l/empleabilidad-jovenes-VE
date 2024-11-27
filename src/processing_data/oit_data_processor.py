@@ -85,10 +85,8 @@ def filter_age_range(df, min_allowed=15, max_allowed=30):
             return True
 
         return False
-
     # Aplicar el filtro
     return df[df['age_extracted'].apply(is_within_range)]
-
 
 def remove_parentheses_content(df, column):
     """
@@ -100,22 +98,12 @@ def remove_parentheses_content(df, column):
 
 
 def preprocess_data(df):
-    """
-    Apply data cleaning and preprocessing steps to the DataFrame.
-    """
-    # Limpiar contenido entre paréntesis
-    df = remove_parentheses_content(df, 'classif1')
-
     # Extraer rango de edades
     if 'classif1' in df.columns:
         df['age_extracted'] = df['classif1'].apply(extract_age)
 
     if 'classif2' in df.columns:
         df = remove_parentheses_content(df, 'classif2')
-
-    # Extraer rango de edades
-    if 'classif1' in df.columns:
-        df['age_extracted'] = df['classif1'].apply(extract_age)
 
     # Convertir valores numéricos en 'obs_value'
     if 'obs_value' in df.columns:
@@ -166,7 +154,8 @@ def analyze_dataset(df):
         'unique_values': {col: df[col].unique().tolist() for col in df.columns if df[col].nunique() < 50}
     }
 
-def export_dataframe(df, filename, filepath='../data/processed/'):
+
+def export_dataframe(df, filename, filepath='./data/processed/'):
     """
     Export the DataFrame to a CSV file.
     """

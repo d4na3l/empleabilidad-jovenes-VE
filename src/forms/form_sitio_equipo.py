@@ -39,7 +39,7 @@ class FormularioSitioEquipo:
             {"nombre": "Christian Rincón", "rol": "Líder del Proyecto"},
             {"nombre": "Manuel Contreras", "rol": "Encargado de documentación"},
             {"nombre": "Alexander Azócar", "rol": "Diseñador"},
-            {"nombre": "Sahid", "rol": "Procesamiento de datos"},
+            {"nombre": "Sahid Acosta", "rol": "Procesamiento de datos"},
             {"nombre": "Janarotu Pérez", "rol": "Búsqueda y filtro de datos"},
         ]
 
