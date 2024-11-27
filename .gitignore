@@ -1,6 +1,8 @@
 # Cambiar de nombre dependiendo de su entorno virtual:
 /project
 venv
+clean_dataFT5.py
+clean_data.py
 
 /desarrollo_proyecto
 #
