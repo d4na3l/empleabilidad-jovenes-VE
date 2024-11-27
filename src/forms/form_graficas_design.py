@@ -1,75 +1,149 @@
 import tkinter as tk
 from tkinter import ttk
-import pandas as pd
-from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import pandas as pd
+import matplotlib.pyplot as plt
+from src.genering_graphs.oit_data_grapher import plot_pie_chart, plot_grouped_bar_chart, plot_line_chart
+
 
 class FormularioGraficasDesign:
-    def __init__(self, parent):
+    def __init__(self, parent, df):
+        """
+        Inicializa el formulario y muestra los gráficos automáticamente al pasar el DataFrame.
+
+        Args:
+            parent: Contenedor principal del formulario (Tkinter).
+            df: DataFrame con los datos a graficar.
+        """
         self.parent = parent  # Recibimos el contenedor principal
         self.cuerpo_principal = parent
-
-        self.dataframes = self.crear_dataframes()  # Inicializa los DataFrames
+        self.df = df  # El DataFrame recibido de la clase anterior
 
         # Limpia el contenido del cuerpo principal antes de agregar nuevos elementos
         self.limpiar_cuerpo_principal()
 
-        # Elementos de UI
-        self.selector_dataframes = self.crear_selector()
-        self.selector_dataframes.pack(pady=10)
+        # Crear los tres frames para los gráficos con tamaños específicos
+        self.frame_pie = tk.Frame(self.cuerpo_principal, width=600, height=400)  # Gráfico Pie
+        self.frame_pie.pack(pady=10, fill='both', expand=True)
 
-        # Configurar figura y canvas
-        self.figura, self.canvas = self.crear_canvas()
-        self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        self.frame_barras = tk.Frame(self.cuerpo_principal, width=600, height=400)  # Gráfico Barras
+        self.frame_barras.pack(pady=10, fill='both', expand=True)
 
-        # Mostrar el gráfico inicial
-        self.selector_dataframes.current(0)
-        self.mostrar_grafico()
+        self.frame_lineas = tk.Frame(self.cuerpo_principal, width=600, height=400)  # Gráfico Líneas
+        self.frame_lineas.pack(pady=10, fill='both', expand=True)
+
+        # Mostrar todos los gráficos automáticamente
+        self.mostrar_graficos()
 
     def limpiar_cuerpo_principal(self):
-        """Limpia todos los widgets del cuerpo principal."""
+        """Limpia todos los widgets del cuerpo principal antes de mostrar nuevos gráficos."""
         for widget in self.cuerpo_principal.winfo_children():
             widget.destroy()
 
-    def crear_dataframes(self):
-        """Crear y devolver los DataFrames para los gráficos."""
-        return {
-            'DataFrame 1': pd.DataFrame({'X': [1, 2, 3, 4, 5], 'Y': [2, 4, 6, 8, 10]}),
-            'DataFrame 2': pd.DataFrame({'X': [1, 2, 3, 4, 5], 'Y': [1, 3, 2, 5, 4]}),
-            'DataFrame 3': pd.DataFrame({'X': [1, 2, 3, 4, 5], 'Y': [5, 3, 4, 2, 1]}),
-        }
+    def obtener_dataframe_actual(self):
+        """Obtiene el DataFrame que está siendo utilizado (en este caso, solo hay uno)."""
+        return self.df
 
-    def crear_selector(self):
-        """Crear y configurar el selector de DataFrames."""
-        selector = ttk.Combobox(self.cuerpo_principal, values=list(self.dataframes.keys()))
-        selector.bind("<<ComboboxSelected>>", self.mostrar_grafico)
-        return selector
+    def mostrar_graficos(self):
+        """
+        Muestra los tres gráficos de manera automática:
+        - Gráfico de pastel
+        - Gráfico de barras agrupadas
+        - Gráfico de líneas de evolución temporal
+        """
+        df = self.obtener_dataframe_actual()
 
-    def crear_canvas(self):
-        """Crear y devolver la figura y el canvas del gráfico."""
-        figura = Figure(figsize=(8, 6), dpi=100)
-        canvas = FigureCanvasTkAgg(figura, master=self.cuerpo_principal)
-        return figura, canvas
+        # Mostrar el gráfico de pastel en su propio frame
+        self.mostrar_grafico_pie(self.frame_pie, df)
 
-    def mostrar_grafico(self, event=None):
-        """Actualizar el gráfico basado en el DataFrame seleccionado."""
-        self.figura.clear()  # Limpiar la figura
+        # Mostrar el gráfico de barras en su propio frame
+        self.mostrar_grafico_barras(self.frame_barras, df)
 
-        # Obtener el DataFrame seleccionado
-        nombre_df = self.selector_dataframes.get()
-        if not nombre_df:  # Validación en caso de que el selector esté vacío
-            return
+        # Mostrar el gráfico de líneas en su propio frame
+        self.mostrar_grafico_lineas(self.frame_lineas, df)
 
-        df = self.dataframes[nombre_df]
+    def mostrar_grafico_pie(self, frame, df):
+        """
+        Muestra un gráfico de pastel (pie chart) en el frame indicado.
 
-        # Crear un nuevo gráfico
-        ax = self.figura.add_subplot(111)
-        ax.plot(df['X'], df['Y'], marker='o', label=nombre_df)
-        ax.set_title(f'Gráfico de {nombre_df}')
-        ax.set_xlabel('Eje X')
-        ax.set_ylabel('Eje Y')
-        ax.grid(True, linestyle='--', alpha=0.6)
-        ax.legend()
+        Args:
+            frame: Frame de Tkinter donde se dibujará el gráfico.
+            df: DataFrame con los datos a graficar.
+        """
+        # Verificar que las columnas necesarias estén presentes
+        if 'sex' not in df.columns or 'obs_value' not in df.columns:
+            print("Error: Las columnas 'sex' o 'obs_value' no se encuentran en el DataFrame.")
+            return  # No continuar si las columnas necesarias no existen
 
-        # Redibujar el canvas
-        self.canvas.draw()
+        # Agrupar los datos por 'sex' y sumar 'obs_value' para cada grupo
+        data = df.groupby('sex')['obs_value'].sum()
+
+        # Crear el gráfico de pastel
+        fig, ax = plt.subplots(figsize=(6, 4))
+        ax.pie(data, labels=data.index, autopct='%1.1f%%', startangle=90)
+        ax.axis('equal')  # Para que el gráfico sea circular
+        ax.set_title("Distribución por Sexo")
+
+        # Mostrar la figura en el frame
+        self.mostrar_figura_en_frame(fig, frame)
+
+    def mostrar_grafico_barras(self, frame, df):
+        """
+        Muestra un gráfico de barras agrupadas en el frame indicado.
+
+        Args:
+            frame: Frame de Tkinter donde se dibujará el gráfico.
+            df: DataFrame con los datos a graficar.
+        """
+        # Verificar que las columnas necesarias estén presentes
+        if 'classif2' not in df.columns or 'obs_value' not in df.columns:
+            print("Error: Las columnas 'classif2' o 'obs_value' no se encuentran en el DataFrame.")
+            return  # No continuar si las columnas necesarias no existen
+
+        # Crear una tabla pivote agrupando por 'classif2' y sumando los valores de 'obs_value'
+        pivot_data = df.pivot_table(values='obs_value', index='classif2', aggfunc='sum')
+
+        # Crear el gráfico de barras
+        fig, ax = plt.subplots(figsize=(6, 4))
+        pivot_data.plot(kind='bar', ax=ax)
+        ax.set_title("Gráfico de Barras Agrupadas")
+        ax.set_xlabel('Clasificación 2')
+        ax.set_ylabel('Valor Observado')
+
+        # Mostrar la figura en el frame
+        self.mostrar_figura_en_frame(fig, frame)
+
+    def mostrar_grafico_lineas(self, frame, df):
+        """
+        Muestra un gráfico de líneas en el frame indicado.
+
+        Args:
+            frame: Frame de Tkinter donde se dibujará el gráfico.
+            df: DataFrame con los datos a graficar.
+        """
+        # Verificar que las columnas necesarias estén presentes
+        if 'year' not in df.columns or 'classif2' not in df.columns or 'obs_value' not in df.columns:
+            print("Error: Las columnas 'year', 'classif2' o 'obs_value' no se encuentran en el DataFrame.")
+            return  # No continuar si las columnas necesarias no existen
+
+        # Agrupar los datos por 'year' y 'classif2', luego graficar la suma de 'obs_value'
+        fig, ax = plt.subplots(figsize=(6, 4))
+        df.groupby(['year', 'classif2'])['obs_value'].sum().unstack().plot(ax=ax)
+        ax.set_title("Progresión Temporal")
+        ax.set_xlabel('Año')
+        ax.set_ylabel('Valor Observado')
+
+        # Mostrar la figura en el frame
+        self.mostrar_figura_en_frame(fig, frame)
+
+    def mostrar_figura_en_frame(self, figura, frame):
+        """
+        Dibuja la figura de Matplotlib dentro del frame de Tkinter.
+
+        Args:
+            figura: Figura de Matplotlib que contiene el gráfico.
+            frame: Frame de Tkinter donde se dibujará la figura.
+        """
+        canvas = FigureCanvasTkAgg(figura, master=frame)
+        canvas.draw()
+        canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
